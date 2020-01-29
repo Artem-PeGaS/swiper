@@ -1,0 +1,29 @@
+.slider {
+	font-size: 1rem;
+
+	&__item {
+		border: 1px black solid;
+		height: 360px;
+	}
+
+	&_destroy {
+		overflow: visible;
+		position: static;
+
+		.swiper-wrapper {
+			display: block;
+			position: static;
+		}
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			display: none;
+		}
+
+		.slider__wrapper {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+			grid-gap: 2rem;
+		}
+	}
+}

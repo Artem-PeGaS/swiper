@@ -1,0 +1,22 @@
+.slider-reviews {
+	height: 300px;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__content {
+		width: 70%;
+		border: 1px black solid;
+		text-align: center;
+	}
+
+	&__img {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+}
