@@ -31,18 +31,17 @@ $(() => {
 	if ($container.find('.slider-main').length > 0) {
 		new Swiper('.slider-main', {
 			loop: true,
+			observer: true,
+			observeParents: true,
 
 			pagination: {
-				el: '.swiper-pagination'
+				el: '.swiper-pagination',
+				clickable: true
 			},
 
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
-			},
-
-			scrollbar: {
-				el: '.swiper-scrollbar'
 			}
 		});
 	}
@@ -82,7 +81,7 @@ $(() => {
 			loop: true,
 
 			pagination: {
-				el: '.swiper-pagination'
+				el: '.slider-reviews .swiper-pagination'
 			},
 
 			// Navigation arrows
