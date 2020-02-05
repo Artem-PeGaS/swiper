@@ -28,6 +28,32 @@ $(() => {
 
 	const $container = $('body');
 
+	if ($container.find('.gallery-product').length > 0) {
+		var galleryThumbs = new Swiper('.gallery-product__thumbs', {
+			spaceBetween: 0,
+			slidesPerView: 4,
+			freeMode: true,
+			loop: true,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			direction: 'vertical',
+			navigation: {
+				nextEl: '.gallery-product__button-next'
+			}
+		});
+
+		var galleryTop = new Swiper('.gallery-product__main', {
+			spaceBetween: 10,
+			loop: true,
+			thumbs: {
+				swiper: galleryThumbs
+			},
+			navigation: {
+				nextEl: '.gallery-product__button-next'
+			}
+		});
+	}
+
 	if ($container.find('.slider-main').length > 0) {
 		new Swiper('.slider-main', {
 			loop: true,
