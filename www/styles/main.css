@@ -632,7 +632,7 @@ button.swiper-pagination-bullet {
 		background-color: var(--red);
 		height: 70px;
 	}
-.swiper-slide {
+.gallery-product .swiper-slide {
 	background-size: cover;
 	background-position: center;
 }
